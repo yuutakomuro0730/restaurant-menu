@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>DINNER MENU | RISTORANTE SAMPLE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="menu.css">
+
+  <!-- フォント -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<section class="menu-page">
+
+  <!-- タイトル＋言語切替 -->
+  <div class="menu-header">
+    <h1>
+      <span class="jp">ディナーメニュー</span>
+      <span class="en">DINNER MENU</span>
+    </h1>
+
+    <div class="lang-switch">
+      <button id="jpBtn" class="active">JP</button>
+      <button id="enBtn">EN</button>
+    </div>
+  </div>
+
+  <!-- ジャンルタブ -->
+  <div class="genre-tabs">
+    <button class="genre-tab active" data-genre="appetizer">ANTIPASTO</button>
+    <button class="genre-tab" data-genre="pasta">PASTA</button>
+    <button class="genre-tab" data-genre="main">SECONDO</button>
+    <button class="genre-tab" data-genre="dessert">DOLCE</button>
+  </div>
+
+  <!-- メニュー -->
+  <div class="menu-list">
+
+    <!-- 前菜 -->
+    <div class="menu-item" data-time="dinner" data-genre="appetizer">
+      <div class="menu-image">
+        <img src="img/carpaccio.jpg">
+      </div>
+      <div class="menu-text">
+        <h3>
+          <span class="jp">真鯛のカルパッチョ</span>
+          <span class="en">Sea Bream Carpaccio</span>
+        </h3>
+        <p>
+          <span class="jp">レモンとオリーブオイルで仕上げた爽やかな一皿</span>
+          <span class="en">Fresh sea bream with lemon and olive oil</span>
+        </p>
+        <span class="price">¥1,400</span>
+      </div>
+    </div>
+
+    <div class="menu-item" data-time="dinner" data-genre="appetizer">
+      <div class="menu-image">
+        <img src="img/appetizer.jpg">
+      </div>
+      <div class="menu-text">
+        <h3>
+          <span class="jp">前菜3種盛り合わせ</span>
+          <span class="en">Assorted Appetizers (3 kinds)</span>
+        </h3>
+        <p>
+          <span class="jp">シェフおすすめの前菜を少しずつ</span>
+          <span class="en">Chef’s selection of seasonal appetizers</span>
+        </p>
+        <span class="price">¥1,800</span>
+      </div>
+    </div>
+
+    <!-- パスタ -->
+    <div class="menu-item" data-time="dinner" data-genre="pasta">
+      <div class="menu-image">
+        <img src="img/pasta.jpg">
+      </div>
+      <div class="menu-text">
+        <h3>
+          <span class="jp">カルボナーラ</span>
+          <span class="en">Carbonara with Homemade Pancetta</span>
+        </h3>
+        <p>
+          <span class="jp">濃厚な卵とチーズのローマ風パスタ</span>
+          <span class="en">Rich egg and cheese sauce, Roman style</span>
+        </p>
+        <span class="price">¥1,800</span>
+      </div>
+    </div>
+
+    <div class="menu-item" data-time="dinner" data-genre="pasta">
+      <div class="menu-image">
+        <img src="img/pasta2.jpg">
+      </div>
+      <div class="menu-text">
+        <h3>
+          <span class="jp">和牛のボロネーゼ</span>
+          <span class="en">Wagyu Beef Bolognese</span>
+        </h3>
+        <p>
+          <span class="jp">赤ワインで煮込んだミートソース</span>
+          <span class="en">Slow-cooked meat sauce with red wine</span>
+        </p>
+        <span class="price">¥2,200</span>
+      </div>
+    </div>
+
+    <!-- メイン -->
+    <div class="menu-item" data-time="dinner" data-genre="main">
+      <div class="menu-image">
+        <img src="img/steak.jpg">
+      </div>
+      <div class="menu-text">
+        <h3>
+          <span class="jp">★ 国産牛のグリル</span>
+          <span class="en">★ Grilled Japanese Beef</span>
+        </h3>
+        <p>
+          <span class="jp">赤ワインソースで仕上げた一皿</span>
+          <span class="en">Served with red wine sauce</span>
+        </p>
+        <span class="price">¥3,800</span>
+      </div>
+    </div>
+
+    <!-- デザート -->
+    <div class="menu-item" data-time="dinner" data-genre="dessert">
+      <div class="menu-image">
+        <img src="img/tiramisu.jpg">
+      </div>
+      <div class="menu-text">
+        <h3>
+          <span class="jp">ティラミス</span>
+          <span class="en">Tiramisu</span>
+        </h3>
+        <p>
+          <span class="jp">マスカルポーネとエスプレッソの定番ドルチェ</span>
+          <span class="en">Classic Italian dessert with mascarpone and espresso</span>
+        </p>
+        <span class="price">¥900</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="menu.js" defer></script>
+
+</body>
+</html>
