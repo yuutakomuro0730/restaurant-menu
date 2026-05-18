@@ -48,3 +48,27 @@ enBtn.addEventListener("click", () => {
   enBtn.classList.add("active");
 });
 filterMenu();
+const fadeEls = document.querySelectorAll(".menu-item");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+fadeEls.forEach(el => {
+  el.classList.add("fade-up");
+  observer.observe(el);
+});
+window.addEventListener("load", () => {
+
+  const loader = document.getElementById("loader");
+
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    loader.style.visibility = "hidden";
+  }, 1500);
+
+});
